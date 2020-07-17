@@ -1,0 +1,56 @@
+/* ====================================
+   CSS setup ��ne rien modifier
+   �diter plus bas
+ * ==================================== */
+
+body { border: 0; margin: 0; padding: 0; }
+header { background-color: #1abc9c; line-height: 80px; }
+nav { background-color: #3498db; }
+article { background-color: #9b59b6; }
+footer { background-color: #e67e22; }
+header, nav, article, footer { color: white; padding: 10px; }
+header, footer { height: 80px; text-align: center; }
+h1, p { margin: 0 0 15px 0; }
+nav a { border-bottom: 1px solid rgba(255,255,255,.3); color: white; display: block; line-height: 40px; text-decoration: none; }
+
+/* ====================================
+   �diter � partir d'ici
+ * ==================================== */
+
+
+
+
+/* Présenter le menu à l'horizontal en résolution supérieure 
+ à 600px. Le menu a une largeur fixe de 200px. Voir résultat 
+ attendu dans resultat1.png */
+
+
+@media screen and (min-width:600px) {
+
+  main {
+    display: flex;
+    }
+
+
+  nav{
+    min-width: 200px;
+    max-width: 200px;
+   
+  }
+
+  }
+
+/* Les contenus se présentent à la verticale avec un breakpoint
+ à 600px de large. Le menu passe sous l'article comme dans l
+ e fichier resultat2.png */
+
+ @media screen and (max-width: 600px) {
+  
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+
+ }
