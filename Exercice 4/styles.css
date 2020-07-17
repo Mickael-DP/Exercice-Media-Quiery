@@ -31,6 +31,10 @@ li {
   width: 100%;
 }
 
+a {
+  display: block;
+  width: 100%;
+}
 /* Présenter le menu à la verticale avec un breakpoint à 
 600px. Les contenus se présentent à la verticale avec un 
 breakpoint à 600px de large comme présenté dans le fichier 
