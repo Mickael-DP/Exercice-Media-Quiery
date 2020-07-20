@@ -70,6 +70,7 @@ footer {
 
   li {
     display: inline-block;
+    width:50%;
   }
 
   #container div {
