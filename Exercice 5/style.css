@@ -16,7 +16,8 @@ ul {
 
 li {
   border: none;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 li a {
@@ -35,8 +36,9 @@ li a:hover {
 }
 
 #container div {
-	display: inline-block;
-	width: 30%;
+  display: flex;
+  flex-direction: column;
+	width: 100%;
 }
 	
 footer {
@@ -56,26 +58,21 @@ footer {
 /* - on affiche les 3 colonnes sur la même ligne
 	 - le menu est affiché en ligne.  */
 
-@media screen and (min-width : 480px){
-
- 
-}
-
 /*- on affiche qu'une seule colonne par ligne, avec 
     les 3 lignes qui se suivent
   - on affiche les 4 items du menu les uns en dessous
     des autres (un seul pr ligne)  */
 	
-@media screen and (max-width : 480px){
+@media screen and (min-width : 480px){
 
   li {
     display: inline-block;
-    width:50%;
+  
   }
 
   #container div {
     display: inline-block;
-    width: 50%
+    width: 30%
   }
  
 }
